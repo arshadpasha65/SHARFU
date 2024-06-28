@@ -1,5 +1,12 @@
 :root{
-    --sec-color : #94d0dd ; 
+    --sec-color  : #3dafccce ; 
+    --logo-color : #FFFF;
+    --name-color : #ffff;
+    --nav-color  : black;
+    --auto-type  : black;
+
+
+
 }
 
 *{
@@ -24,7 +31,6 @@
 header{
     display: flex;
     justify-content:space-between;
-      
     border-bottom: black;
     box-shadow: 20px 1.2px 10px white, 5px 5px 5.2px white;
 }
@@ -37,7 +43,7 @@ header{
 
 }
 .hL h1{
-    color: white;
+    color: var(--logo-color);
     font-size: 4vw;
     font-family: "Roboto Condensed", sans-serif;
     font-optical-sizing: auto;
@@ -50,6 +56,7 @@ header{
     width: 60vw;
     margin-top: 2%;
     font-size: 1.5vw ;
+    
 }
 .hR ul {
     display: flex;
@@ -64,7 +71,7 @@ header{
 }
 .hR ul li a {
     text-decoration: none;
-    color: black;
+    color: var(--nav-color);
     
 }
 .hR ul li a:hover{
@@ -86,11 +93,12 @@ header{
     font-size: 7vh;
 
     font-weight: 900;
+    color: var(--auto-type);
     
 
 }
 .coloringArshad {
-   color: rgb(41, 40, 39);
+   color: var(--name-color);
     font-size: 4vw;
     font-family: "Roboto Condensed", sans-serif;
     font-optical-sizing: auto;
@@ -109,4 +117,17 @@ header{
     /* border: 1px solid black; */
     
 
+}
+.socilaMedia{
+  display: flex;
+  justify-content:space-between;   
+  width: 50%;
+}
+.socilaMedia a img{
+    height: 40px;
+    width: 40px;
+ 
+}
+.socilaMedia a img:hover{
+    box-shadow: 2px 2px 90px black, 8px 7px 20px black;
 }
