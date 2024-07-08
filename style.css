@@ -431,9 +431,20 @@ footer{
 /* ------------------------------- footer ------------------------ */
 
 footer{
-    height: 18vh;
-    width: 100vw;
+    height: 18%;
+    width: 100%;
     background-color: black;
     color: white;
 }
 
+.blink {
+    
+    color: #ff6347; /* Tomato color */
+    animation: blink-animation 1.5s infinite;
+}
+
+@keyframes blink-animation {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
