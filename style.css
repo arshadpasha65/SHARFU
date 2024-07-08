@@ -417,6 +417,14 @@ header{
      border-radius: 5.5vh;
      justify-content: center;
 }
+footer h1 {
+    font-size: 20px;
+}
+footer{
+    height: 15vh;
+ 
+}
+
 }
 
 
