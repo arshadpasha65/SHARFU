@@ -88,6 +88,7 @@ header{
     padding: 20vh 10vw;
     width: 40%;
     float: left;
+    
    
 }
 .autotype h1{
@@ -113,8 +114,7 @@ header{
     border-radius: 5.5vh;
 }
 .photo{
-  
-   padding: 5vh;
+  margin-top: 2%;
     /* border: 1px solid black; */
     
 
@@ -155,9 +155,10 @@ header{
     
     }
     .photo img{
-        height: 250px;
-        width: 200px;
+        height: 300px;
+        width: 250px;
         border-radius: 5.5vh;
+        
     }
 
     .socilaMedia{
@@ -169,8 +170,22 @@ header{
       }
 
       .socilaMedia a img{
-        height: 30px;
-        width: 30px;
+        height: 25px;
+        width: 25px;
      
+    }
+    .photo{
+         padding: 0vh 20vw;   
+         border: 1px solid red;
+         
+      
+      
+      }
+      .autotype{
+        padding: 10vh 10vw;
+        width: 40%;
+        float: left;
+        
+       
     }
 }
