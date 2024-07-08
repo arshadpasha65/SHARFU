@@ -4,7 +4,9 @@
     --name-color : #ffff;
     --nav-color  : rgb(0, 0, 0);
     --auto-type  : black;
-
+    --ab-color :  #3dafccce;
+    --margin-right : 10%;
+    --margin-left : 10%;
 
 
 }
@@ -19,6 +21,17 @@
     
 }
 
+.more-content {
+    display: none;
+}
+.more-content-ln{
+    display: none;
+}
+.t-l{
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+}
 
 
   
@@ -27,6 +40,8 @@
     background-color: var(--sec-color) ;
     height: 100vh;   
     width: 100vw;
+    
+    
 }
 
 header{
@@ -85,9 +100,11 @@ header{
 
 
 .autotype{
-    padding: 20vh 10vw;
-    width: 40%;
+    /* padding: 20vh 10vw; */
     float: left;
+    margin-top: 10%;
+    width: 40%;
+    margin-left: var(--margin-left);
     
    
 }
@@ -109,9 +126,11 @@ header{
 }
 
 .photo img{
-    height: 500px;
+    height: 495px;
     width: 400px;
     border-radius: 5.5vh;
+    float: right;
+    margin-right: var(--margin-right);
 }
 .photo{
   margin-top: 2%;
@@ -133,7 +152,133 @@ header{
 .socilaMedia a img:hover{
     box-shadow: 2px 2px 90px black, 8px 7px 20px black;
 }
-/* -------------------------- Media for Phone -------------------- */
+
+/* -----------------------------------------------SEC 2-------------------------------------- */
+#sec2{
+   width: 100vw;
+   height: 100vh;   
+}
+
+.img_about{
+    float: left;
+    margin-top: 4%;
+    margin-left: var(--margin-left);
+}
+.img_about img{
+    height: 490px;
+    width: 400px;
+    border-radius: 5.5vh;
+}
+.about_text{
+    width: 45%;
+    float: right;
+    margin-right: var(--margin-right);
+    margin-top: 5%;
+}
+.about_text h2{
+
+    text-align: center;
+    justify-items: center;
+    text-align: justify;
+}
+ .ab_coloring {
+    color: var(--ab-color);
+}
+
+
+
+
+/* ----------------------------------- Sec 3 ---------------------------------- */
+
+#sec3{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--sec-color);
+}
+.img_ln{
+   
+    float: right;
+    margin-right: var(--margin-right);
+    margin-top: 5%;
+
+}
+.img_ln img {
+    height: 490px;
+    width: 400px;
+    border-radius: 5.5vh;
+}
+
+.ln_text{
+    float: left;
+    margin-top: 4%;
+    margin-left: var(--margin-left);
+    width: 40%;
+    text-align: justify;
+}
+
+
+/* -----------------------------------------sec 4--------------------------------------------- */
+
+#sec4{
+      width: 100vw;
+    height: 140vh;
+
+}
+
+.sp{
+    float: left;
+    margin-left: var(--margin-left);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap : 10VW;
+    margin-right: var(--margin-right);
+}
+.sp img {
+     height: 300px;
+     width: 250px;
+     border-radius: 5.5vh;
+}
+
+
+/* --------------------------------- Sec 5 -------------------------------- */
+
+#sec5{
+      width: 100%;
+    height: 100%;
+    background-color: var(--sec-color);
+}
+.contact-slider {
+    width: 200px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.contact-slide {
+      width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-slide.active {
+    opacity: 1;
+}
+
+.contact-slide img {
+    width: 100px; /* Adjust as per your logo size */
+    height: auto;
+    margin-bottom: 10px;
+}
+/* -------------------------- Media for Phone  all Sec-------------------- */
 
 @media (max-width:700px)
 {
@@ -176,7 +321,7 @@ header{
     }
     .photo{
          padding: 0vh 20vw;   
-         border: 1px solid red;
+         /* border: 1px solid red; */
          
       
       
@@ -188,4 +333,85 @@ header{
         
        
     }
+
+    /* ---------------------------- sec2 media ---------------------- */
+ 
+    #sec2{
+        width: 100vw;
+        height: 120vh;   
+     }
+    .img_about img{
+        height: 250px;
+        width: 300px;
+        border-radius: 5.5vh;
+    }
+    .about_text{
+     
+       width: 90%;
+        font-size: 12px;
+        float: left;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    .about_text h2{
+    
+        text-align: center;
+        justify-items: center;
+        text-align: justify;
+    }
+     .ab_coloring {
+        color: var(--ab-color);
+    }
+    /* ----------------------------------SEC 3 ------------------------------------------ */
+
+    
+#sec3{
+    height: auto;
+    width: 100vw;
+    background-color: var(--sec-color);
+}
+.img_ln{
+   
+    float: right;
+    margin-right: var(--margin-right);
+    margin-top: 5%;
+
+}
+.img_ln img {
+    height: 250px;
+    width: 300px;
+    border-radius: 5.5vh;
+}
+
+.ln_text{
+    width: 90%;
+        font-size: 12px;
+        float: left;
+        margin-left: 5%;
+        margin-top: 5%;
+}
+
+    /* ------------------------------- Sec 4---------------------------------- */
+
+    
+#sec4{
+      width: 100vw;
+    height: 100vh;
+}
+
+.sp{
+    float: left;
+    margin-left: 16.5%;
+    display: grid;
+
+    grid-template-columns: repeat(1,1fr);
+    gap : 10VW;
+    
+}
+.sp img {
+     height: 300px;
+     width: 250px;
+     border-radius: 5.5vh;
+     justify-content: center;
+}
 }
